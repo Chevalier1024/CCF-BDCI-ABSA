@@ -1,8 +1,8 @@
-# CCF2019 BDCI 金融信息负面及主体判定 （登封造极 团队方案）
+# CCF2019 BDCI 金融信息负面及主体判定 （登封造极 团队第三名方案）
 
-## 注意！！！
-* 如果在运行过程中遇到任何问题，请立即和我们联系，我们会积极配合进行解决。当然您也可以尝试自己debug，因为不会有大的错误。
-* 如果有任何其他问题也可以直接联系我们：scut_chenfeng@163.com,scut_kongjunsheng@qq.com
+## 整理不易，烦请点个star~
+## 本人研究方向为NLP，欢迎交流
+## 有时间会写个总结，可以关注[我的知乎](https://www.zhihu.com/people/chen-feng-91-57/posts)
 
 * 队伍：登峰造极
     * Chevalier
@@ -184,4 +184,6 @@ python postprocess.py
 email：scut_chenfeng@163.com
 
 ## 特别鸣谢
+https://github.com/GeneZC/BERTFinanceNeg
+https://github.com/guoday/CCF-BDCI-Sentiment-Analysis-Baseline
 
