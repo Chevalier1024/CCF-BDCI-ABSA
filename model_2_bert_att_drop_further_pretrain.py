@@ -197,7 +197,7 @@ class NeuralNet(nn.Module):
         self.bert = BertModel.from_pretrained(model_name_or_path, config=self.config)
         for param in self.bert.parameters():
             param.requires_grad = True
-        self.weights = torch.rand(13, 1).cuda()
+        self.weights = nn.Parameter(torch.rand(13, 1))
         self.dropouts = nn.ModuleList([
             nn.Dropout(0.5) for _ in range(5)
         ])
