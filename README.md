@@ -184,6 +184,6 @@ python postprocess.py
 email：scut_chenfeng@163.com
 
 ## 特别鸣谢
-https://github.com/GeneZC/BERTFinanceNeg
-https://github.com/guoday/CCF-BDCI-Sentiment-Analysis-Baseline
+* https://github.com/GeneZC/BERTFinanceNeg
+* https://github.com/guoday/CCF-BDCI-Sentiment-Analysis-Baseline
 
