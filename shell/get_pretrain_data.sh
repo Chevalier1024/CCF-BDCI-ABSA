@@ -1,0 +1,1 @@
+python ./Further_pretraining/create_pretraining_data.py --input_file=./datasets/pretrain_data.txt --output_file=./datasets/tf_pretrain_data.tfrecord --vocab_file=./pretrain_weight/bert/vocab.txt --do_lower_case=True --max_seq_length=128 --max_predictions_per_seq=20 --masked_lm_prob=0.15 --random_seed=42 --dupe_factor=5

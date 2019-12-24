@@ -1,0 +1,34 @@
+nohup: ignoring input
+2019-11-08 13:17:32.430055: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-08 13:17:32.765105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.605
+pciBusID: 0000:85:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-11-08 13:17:32.765160: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-11-08 13:17:35.777063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-08 13:17:35.777110: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-11-08 13:17:35.777119: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-11-08 13:17:35.778313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10168 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:85:00.0, compute capability: 7.5)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/absl/flags/_flagvalues.py", line 528, in _assert_validators
+    validator.verify(self)
+  File "/usr/local/lib/python3.6/dist-packages/absl/flags/_validators.py", line 81, in verify
+    raise _exceptions.ValidationError(self.message)
+absl.flags._exceptions.ValidationError: Flag --input_file must have a value other than None.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run_pretraining.py", line 499, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/platform/app.py", line 119, in run
+    argv = flags.FLAGS(_sys.argv if argv is None else argv, known_only=True)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/platform/flags.py", line 112, in __call__
+    return self.__dict__['__wrapped'].__call__(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/absl/flags/_flagvalues.py", line 636, in __call__
+    self._assert_all_validators()
+  File "/usr/local/lib/python3.6/dist-packages/absl/flags/_flagvalues.py", line 510, in _assert_all_validators
+    self._assert_validators(all_validators)
+  File "/usr/local/lib/python3.6/dist-packages/absl/flags/_flagvalues.py", line 531, in _assert_validators
+    raise _exceptions.IllegalFlagValueError('%s: %s' % (message, str(e)))
+absl.flags._exceptions.IllegalFlagValueError: flag --input_file=None: Flag --input_file must have a value other than None.
