@@ -1,6 +1,6 @@
 # CCF2019 BDCI 金融信息负面及主体判定 （登封造极 团队第三名方案）
 
-## 整理不易，烦请点个star~ 本人研究方向为NLP，欢迎交流~ 有时间会写个总结，可以关注[我的知乎](https://www.zhihu.com/people/chen-feng-91-57/posts)
+## 整理不易，烦请点个star~ 本人研究方向为NLP，欢迎交流~ ~有时间会写个总结~，可以关注[我的知乎](https://www.zhihu.com/people/chen-feng-91-57/posts)
 
 * 队伍：登峰造极
     * Chevalier
